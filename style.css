@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.column {
+    border: 1px solid black;
+    background-color: gray;
+    color: white;
+    float: left;
+    margin-right: 30px;
+    flex: 1;
+}
+
+.column {
+    border: 1px solid black;
+    background-color: gray;
+    color: white;
+    float: left;
+    margin-right: 30px;
+    flex: 1;
+}
+
+.column {
+    border: 1px solid black;
+    background-color: gray;
+    color: white;
+    float: left;
+    flex: 1;
+}
+
+.row {
+    display: flex;
+}
+
+.Chicken {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    float: right;
+    background-color: lightcoral;
+    color: black;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Beef {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    float: right;
+    background-color: red;
+    color: white;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Sushi {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    float: right;
+    background-color: lightyellow;
+    color: black;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    clear: both;
+    width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    
+    .column {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    .third {
+        flex: 100%;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 767px) {
+    .row {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .column {
+        flex: 1;
+        margin-right: 0;
+    }
+
+    .column:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
